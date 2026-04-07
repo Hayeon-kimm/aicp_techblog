@@ -4,215 +4,23 @@
 
 @charset "utf-8";
 
-// Custom skin colors matching portfolio site
-$background-color: #0a0a0f !default;
-$text-color: #f0eee8 !default;
-$muted-text-color: #9a9a9a !default;
-$primary-color: #6bcbff !default;
-$border-color: #1e1e2a !default;
-$code-background-color: #12121a !default;
-$link-color: #6bcbff !default;
-$link-color-hover: #ffd93d !default;
-$link-color-visited: #c77dff !default;
-$masthead-link-color: #f0eee8 !default;
-$masthead-link-color-hover: #ffd93d !default;
-$navicon-link-color-hover: #ffd93d !default;
-$footer-background-color: #0a0a0f !default;
-
-// Fonts
-$sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
-$monospace: "IBM Plex Mono", monospace !default;
+$background-color: #0a0a0f;
+$text-color: #f0eee8;
+$muted-text-color: #9a9a9a;
+$primary-color: #6bcbff;
+$border-color: #1e1e2a;
+$code-background-color: #12121a;
+$link-color: #6bcbff;
+$link-color-hover: #ffd93d;
+$link-color-visited: #c77dff;
+$masthead-link-color: #f0eee8;
+$masthead-link-color-hover: #ffd93d;
+$navicon-link-color-hover: #ffd93d;
+$footer-background-color: #0a0a0f;
+$lighter-gray: #12121a;
+$dark-gray: #9a9a9a;
+$sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$monospace: "IBM Plex Mono", monospace;
 
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
-
-// Custom overrides
-html {
-  background-color: #0a0a0f;
-}
-
-body {
-  background-color: #0a0a0f;
-  color: #f0eee8;
-}
-
-// Masthead
-.masthead {
-  background-color: #0a0a0f;
-  border-bottom: 1px solid #1e1e2a;
-}
-
-.site-title {
-  color: #f0eee8 !important;
-}
-
-// Greedy nav
-.greedy-nav {
-  background: #0a0a0f;
-
-  a {
-    color: #f0eee8;
-
-    &:hover {
-      color: #ffd93d;
-    }
-  }
-
-  .visible-links a:before {
-    background: #6bcbff;
-  }
-}
-
-// Page content
-.page__content {
-  h1, h2, h3, h4, h5, h6 {
-    color: #f0eee8;
-  }
-
-  p, li, td {
-    color: #d0cec8;
-  }
-}
-
-// Sidebar / Author profile
-.sidebar {
-  background-color: #0a0a0f;
-}
-
-.author__name {
-  color: #f0eee8;
-}
-
-.author__bio {
-  color: #9a9a9a;
-}
-
-.author__urls-wrapper {
-  a {
-    color: #6bcbff;
-
-    &:hover {
-      color: #ffd93d;
-    }
-  }
-}
-
-// Archive items (post list)
-.archive__item-title {
-  color: #f0eee8 !important;
-
-  a {
-    color: #f0eee8 !important;
-
-    &:hover {
-      color: #ffd93d !important;
-    }
-  }
-}
-
-.archive__item-excerpt {
-  color: #9a9a9a;
-}
-
-.page__meta {
-  color: #9a9a9a;
-}
-
-// Code blocks
-div.highlighter-rouge,
-figure.highlight {
-  background: #12121a;
-  border: 1px solid #1e1e2a;
-  border-radius: 8px;
-}
-
-code.highlighter-rouge {
-  background: #12121a;
-  color: #ff6b6b;
-  border-radius: 4px;
-  padding: 2px 6px;
-}
-
-pre {
-  background: #12121a;
-  color: #f0eee8;
-}
-
-// Tables
-table {
-  background: #12121a;
-  border: 1px solid #1e1e2a;
-  border-radius: 8px;
-
-  th {
-    background: #1a1a25;
-    color: #ffd93d;
-    border-bottom: 2px solid #2a2a3a;
-  }
-
-  td {
-    border-bottom: 1px solid #1e1e2a;
-    color: #d0cec8;
-  }
-}
-
-// Links
-a {
-  color: #6bcbff;
-
-  &:hover {
-    color: #ffd93d;
-  }
-
-  &:visited {
-    color: #c77dff;
-  }
-}
-
-// Footer
-.page__footer {
-  background-color: #0a0a0f;
-  border-top: 1px solid #1e1e2a;
-  color: #9a9a9a;
-}
-
-// Pagination
-.pagination--pager {
-  background-color: #12121a;
-  border: 1px solid #1e1e2a;
-  color: #f0eee8;
-
-  &:hover {
-    background-color: #1e1e2a;
-    color: #ffd93d;
-  }
-}
-
-// Cards style for archive items
-.list__item {
-  background: #12121a;
-  border: 1px solid #1e1e2a;
-  border-radius: 12px;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  transition: border-color 0.3s ease;
-
-  &:hover {
-    border-color: #6bcbff;
-  }
-}
-
-// Blockquotes
-blockquote {
-  border-left: 4px solid #6bcbff;
-  background: #12121a;
-  color: #d0cec8;
-  padding: 1em;
-  border-radius: 0 8px 8px 0;
-}
-
-// Selection color
-::selection {
-  background: #6bcbff;
-  color: #0a0a0f;
-}
