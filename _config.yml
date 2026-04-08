@@ -1,4 +1,4 @@
-remote_theme: cotes2020/jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
 
 lang: ko
 
@@ -98,4 +98,3 @@ plugins:
   - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-remote-theme

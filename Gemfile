@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll-theme-chirpy", "~> 7.4"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-remote-theme"
   gem "jekyll-archives"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
