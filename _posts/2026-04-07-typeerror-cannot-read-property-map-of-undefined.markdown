@@ -2,8 +2,9 @@
 layout: post
 title: "TypeError: Cannot read property 'map' of undefined 에러 분석 및 해결법"
 date: 2026-04-07 18:31:00 +0900
-categories: [JavaScript, Error]
+categories: [PPT Auto-generation]
 tags: [error, debugging, react]
+author: Hayeon
 description: "JavaScript/React에서 가장 흔한 에러 중 하나인 'Cannot read property map of undefined' 원인과 해결법을 알아봅니다."
 ---
 
