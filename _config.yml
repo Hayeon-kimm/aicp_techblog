@@ -4,11 +4,11 @@ lang: ko
 
 timezone: Asia/Seoul
 
-title: Tech Blog
-tagline: "개발 에러 분석 & 기술 블로그"
+title: "UNIST AICP Team '아자잣'"
+tagline: "Agent기반 자동화 블로그"
 
 description: >-
-  개발 중 만나는 에러를 분석하고 해결법을 공유하는 기술 블로그입니다.
+  PPT Auto-generation과 AI Agent를 연구합니다. Agent기반 자동화 블로그
 
 url: "https://hayeon-kimm.github.io"
 baseurl: "/aicp_techblog"
