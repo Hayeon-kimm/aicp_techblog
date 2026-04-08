@@ -1,82 +1,100 @@
-remote_theme: mmistakes/minimal-mistakes
+theme: jekyll-theme-chirpy
 
-# Site settings
-title: Tech Blog
-subtitle: "개발 에러 분석 & 기술 블로그"
-name: Hayeon Kim
-description: >-
-  개발 중 만나는 에러를 분석하고 해결법을 공유하는 기술 블로그입니다.
-baseurl: ""
-url: "https://hayeon-kimm.github.io"
-repository: "Hayeon-kimm/aicp_techblog"
-logo: ""
-masthead_title: "Tech Blog"
+lang: ko
 
-# Site Author
-author:
-  name: "Hayeon Kim"
-  avatar: ""
-  bio: "Developer"
-  location: "South Korea"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/Hayeon-kimm"
-
-# Reading
-words_per_minute: 200
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-remote-theme
-  - jekyll-paginate
-
-# Include
-include:
-  - _pages
-
-# Outputting
-permalink: /:categories/:title/
 timezone: Asia/Seoul
 
-# Defaults
+title: Tech Blog
+tagline: "개발 에러 분석 & 기술 블로그"
+
+description: >-
+  개발 중 만나는 에러를 분석하고 해결법을 공유하는 기술 블로그입니다.
+
+url: "https://hayeon-kimm.github.io"
+baseurl: "/aicp_techblog"
+
+github:
+  username: Hayeon-kimm
+
+social:
+  name: Hayeon Kim
+  links:
+    - https://github.com/Hayeon-kimm
+
+# Web Analytics
+analytics:
+  google:
+    id: ""
+
+# Preferences
+theme_mode: dark
+
+avatar: ""
+
+toc: true
+
+comments:
+  provider: ""
+
+assets:
+  self_host:
+    enabled: false
+
+paginate: 10
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: true
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 defaults:
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
+      layout: post
       comments: false
-      share: true
-      related: true
-      show_date: true
       toc: true
-      toc_sticky: true
+      permalink: /posts/:title/
   - scope:
-      path: "_pages"
-      type: pages
+      path: _tabs
+      type: tabs
     values:
-      layout: single
-      author_profile: true
+      layout: page
+      permalink: /:title/
 
-# Skin
-minimal_mistakes_skin: "dark"
+sass:
+  style: compressed
 
-# Pagination
-paginate: 10
-paginate_path: /page:num/
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
 
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
