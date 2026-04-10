@@ -8,6 +8,18 @@ author: Hwijun Kim
 description: "n8n Discord 워크플로우에서 Send Message and Wait for Response 노드를 활용한 자동 포스팅 봇을 개발하고, SSH 터널 환경에서의 이슈를 해결한 과정을 정리해요."
 ---
 
+## 오늘의 목표
+
+n8n으로 개인 봇이 나에게 질문하고 응답하게 하기
+
+## 결과
+
+실패
+
+## 다음 목표
+
+실패 개선, 개인 봇이 나의 개인 비서처럼 상호작용할 수 있게 하는 기반 갖추기
+
 ## 요약
 
 n8n Discord 워크플로우에서 "Send Message and Wait for Response" 노드를 활용한 자동 포스팅 봇을 개발했어요. Custom Form과 Free Text 방식을 비교한 후, SSH 터널 환경에서의 webhook URL 접근 문제를 회피하기 위해 Free Text 방식을 채택했어요. Discord 채널 메시지를 수집하여 Claude API로 요약 후 자동 포스팅하는 워크플로우를 완성했어요.

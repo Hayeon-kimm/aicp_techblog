@@ -8,6 +8,14 @@ author: Hwijun Kim
 description: "PPTArena 프로젝트의 디렉토리 구조를 확인하고, 벤치마크용 PPTX 파일 목록 점검 및 서버 간 파일 동기화 환경을 확인한 과정을 정리해요."
 ---
 
+## 오늘의 목표
+
+GPU 서버에 저장해둔 벤치마크 자유롭게 복제해서 로컬로 이동과 HTTP POST 가능하게 하기
+
+## 다음 목표
+
+n8n HTTP request로 GenSpark 웹페이지에 PPT 편집 요청 넣는 기능 만들기
+
 ## 요약
 
 PPTArena 프로젝트의 디렉토리 구조를 탐색하고, Selected_Original 폴더 내 벤치마크용 PPTX 파일 목록을 점검했어요. 로컬(WSL)과 원격 서버 간 파일 동기화 환경도 확인했어요.
@@ -34,4 +42,5 @@ PPTArena 프로젝트의 디렉토리 구조를 탐색하고, Selected_Original 
 
 ## 참고
 
-- PPTArena 벤치마크는 16개 테스트 케이스로 구성되어 있으며, GenSpark 생성 결과와 GroundTruth를 비교하는 구조예요.
+- PPTArena는 100개의 샘플 덱이 있는 PPT 편집 능력 평가 벤치마크예요. ([논문 링크](https://arxiv.org/pdf/2512.03042))
+- 현재 Selected_Original에는 16개 테스트 케이스가 선별되어 있으며, GenSpark 생성 결과와 GroundTruth를 비교하는 구조예요.

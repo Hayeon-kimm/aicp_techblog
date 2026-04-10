@@ -8,6 +8,14 @@ author: Hwijun Kim
 description: "Genspark AI 슬라이드 에이전트의 HAR 파일을 분석하고, PPT 발표자 노트의 filler words 자동 제거 테스트 및 오픈소스 클론 API 조사를 정리해요."
 ---
 
+## 오늘의 목표
+
+GenSpark 웹의 PPT 편집 기능 자동화하기
+
+## 다음 목표
+
+원격으로 GPU 서버에 저장해둔 벤치마크 샘플 로컬에 불러오는 기능 만들기
+
 ## 요약
 
 Genspark AI의 슬라이드 에이전트 동작 방식을 HAR 파일 분석을 통해 파악했어요. PPT 업로드 후 SSE 스트리밍으로 AI 편집 결과를 수신하는 구조이며, 발표자 노트에서 filler words(um, uh, like 등)를 자동 제거하는 테스트도 수행했어요. 39개 슬라이드를 분석해서 30개 수정, 9개 삭제, 217자의 불필요 단어를 제거했어요. 오픈소스 클론(`open-genspark`)의 API 엔드포인트도 확인했어요.
