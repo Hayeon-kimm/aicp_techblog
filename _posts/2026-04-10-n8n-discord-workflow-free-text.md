@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[10-04-2026] 사이버 노예 AI Agent 만들기 - (4) n8n 자동 포스팅 워크플로우 완성 및 SSH 터널 환경 이슈 해결"
+title: "[10-04-2026] 사이버 노예 AI Agent 만들기 - (4) n8n 봇 상호작용 기능 도전 및 SSH 터널 환경 이슈"
 date: 2026-04-10 18:00:00 +0900
 categories: [AI Agent]
 tags: [n8n, discord-bot, claude-api, ssh-tunnel, free-text, scp]
@@ -12,13 +12,9 @@ description: "n8n Discord 워크플로우에서 Send Message and Wait for Respon
 
 n8n으로 개인 봇이 나에게 질문하고 응답하게 하기
 
-## 결과
-
-실패
-
 ## 요약
 
-n8n Discord 워크플로우에서 "Send Message and Wait for Response" 노드를 활용한 자동 포스팅 봇을 개발했어요. Custom Form과 Free Text 방식을 비교한 후, SSH 터널 환경에서의 webhook URL 접근 문제를 회피하기 위해 Free Text 방식을 채택했어요. Discord 채널 메시지를 수집하여 Claude API로 요약 후 자동 포스팅하는 워크플로우를 완성했어요.
+n8n Discord 워크플로우에서 "Send Message and Wait for Response" 노드를 활용해 개인 봇이 나에게 질문하고 응답을 받는 상호작용 기능을 구현하려 했어요. Custom Form과 Free Text 방식을 비교했지만, SSH 터널 환경에서 Custom Form의 webhook URL 접근 문제가 발생했고, Free Text 방식으로 우회했어요. 워크플로우 자체는 구성했지만, 봇이 나에게 질문하고 응답하게 하는 최종 목표는 달성하지 못했어요. `spawn claude ENOENT` 등 여러 에러가 해결되지 않은 상태예요.
 
 ## 환경
 
