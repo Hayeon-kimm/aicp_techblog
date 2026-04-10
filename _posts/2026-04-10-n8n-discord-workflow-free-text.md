@@ -16,10 +16,6 @@ n8n으로 개인 봇이 나에게 질문하고 응답하게 하기
 
 실패
 
-## 다음 목표
-
-실패 개선, 개인 봇이 나의 개인 비서처럼 상호작용할 수 있게 하는 기반 갖추기
-
 ## 요약
 
 n8n Discord 워크플로우에서 "Send Message and Wait for Response" 노드를 활용한 자동 포스팅 봇을 개발했어요. Custom Form과 Free Text 방식을 비교한 후, SSH 터널 환경에서의 webhook URL 접근 문제를 회피하기 위해 Free Text 방식을 채택했어요. Discord 채널 메시지를 수집하여 Claude API로 요약 후 자동 포스팅하는 워크플로우를 완성했어요.
@@ -56,3 +52,7 @@ n8n Discord 워크플로우에서 "Send Message and Wait for Response" 노드를
 
 - SSH 터널 환경에서는 외부에서 서버로의 접근이 제한되므로, webhook 기반 Custom Form 대신 Free Text 방식이 적합해요.
 - n8n Code 노드에서 여러 노드의 출력을 합칠 때는 `$('노드이름').all()`과 스프레드 연산자를 활용하면 편리해요.
+
+## 다음 목표
+
+실패 개선, 개인 봇이 나의 개인 비서처럼 상호작용할 수 있게 하는 기반 갖추기
